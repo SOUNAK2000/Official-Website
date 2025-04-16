@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>B&A PACKAGING INDIA LIMITED</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth; /* Smooth scroll */
+        }
+        /* Header */
+        header {
+            background-color: #008cba;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('4444.jpg') no-repeat center center/cover;
+            height: 500px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h2 {
+            font-size: 50px;
+        }
+        /* Main Section */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .service, .about, .sustainability, .products {
+            padding: 20px 0;
+        }
+        h3 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .service-grid, .product-grid {
+            display: flex;
+            justify-content: space-between;
+        }
+        .service-item, .product-item {
+            background-color: white;
+            padding: 15px;
+            width: 30%;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .service-item img, .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin: 20px 0;
+        }
+        .faq-item {
+            margin-bottom: 10px;
+        }
+        .faq-question {
+            background-color: #008cba;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .faq-question:hover {
+            background-color: #0075a3;
+        }
+        .faq-answer {
+            display: none;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #008cba;
+        }
+
+        /* Scroll-to-Top Button */
+        #scrollTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        #scrollTopBtn:hover {
+            background-color: #005f85;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 20px auto;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #005f85;
+        }
+
+        /* Footer Styling */
+        footer {
+        background-color: #222;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        }
+
+        .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #444;
+        }
+
+        .footer-column {
+        margin: 20px;
+         width: 30%;
+        }
+
+        .footer-column h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #ff9800;
+        }
+
+        .footer-column p {
+        font-size: 14px;
+        line-height: 1.5;
+        }
+
+        .social-icons {
+        margin-top: 10px;
+        }
+
+        .social-icons a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 20px;
+        }
+
+        .social-icons a :hover {
+        background-color: orange;
+        }
+
+        .footer-bottom {
+        margin-top: 20px;
+        }
+
+        .footer-bottom p {
+        font-size: 14px;
+        margin: 0;
+        }
+
+        @media (max-width: 768px) {
+        .footer-column {
+        width: 100%;
+        text-align: left;
+        }
+
+        .footer-container {
+        flex-direction: column;
+        align-items: center;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>B&A PACKAGING INDIA LIMITED</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#sustainability">Sustainability</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Innovative & Sustainable Packaging Solutions</h2>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="service container">
+        <h3>Our Services</h3>
+        <div class="service-grid">
+            <div class="service-item">
+                <img src="FLEXY.jpg" alt="Custom Packaging">
+                <h4>Custom Packaging</h4>
+                <p>We provide tailor-made packaging solutions to meet your product’s unique needs.</p>
+            </div>
+            <div class="service-item">
+                <img src="FLEXY rolls (1).jpg" alt="Eco-Friendly Solutions">
+                <h4>Industrial Packaging</h4>
+                <p>Durable and reliable packaging solutions for heavy-duty and industrial goods.</p>
+            </div>
+            <div class="service-item">
+                <img src="paper sack.jpg" alt="Industrial Packaging">
+                <h4>Eco-Friendly Packaging</h4>
+                <p>Reduce your carbon footprint with our sustainable packaging options.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about container">
+        <h3>About Us</h3>
+        <p>At Packaging Company, we have been providing innovative and sustainable packaging solutions for over 20 years. Our mission is to ensure your products are safely delivered in eco-friendly packaging that resonates with your brand’s identity.</p>
+        <img src="3333.jpeg" alt="Company Image" style="width: 100%; border-radius: 10px;">
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products container">
+        <h3>Our Products</h3>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="IMG_20240910_132052.jpg" alt="Corrugated Boxes">
+                <h4>PAPER SACK</h4>
+                <p>Sturdy, customizable corrugated boxes for all types of products.</p>
+            </div>
+            <div class="product-item">
+                <img src="printing machine.jpeg" alt="Bubble Wrap">
+                <h4>FLEXIBLE LAMINATES</h4>
+                <p>Protect fragile items with our high-quality bubble wrap and foam inserts.</p>
+            </div>
+            <div class="product-item">
+                <img src="IMG_20240910_152507.jpg" alt="Custom Printed Pouches">
+                <h4>OUR RETAIL SERVICE</h4>
+                <p>Enhance your brand with custom printed packaging designed to impress.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="sustainability container">
+        <h3>Sustainability</h3>
+        <p>We are committed to creating environmentally friendly packaging. Our sustainable packaging options are made from recycled materials and designed to be fully recyclable or biodegradable.</p>
+        <img src="https://iskalo.com/wp-content/uploads/2021/03/eco-illustration-1024x831.png" alt="Sustainability" style="width: 100%; border-radius: 10px;">
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section container">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-item">
+            <button class="faq-question">What materials do you use for eco-friendly packaging?</button>
+            <div class="faq-answer">
+                <p>We use recycled materials such as corrugated cardboard, biodegradable plastics, and compostable materials for our eco-friendly packaging.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Can you customize packaging for my brand?</button>
+            <div class="faq-answer">
+                <p>Yes, we offer fully customizable packaging solutions, including printed logos, specific dimensions, and various packaging types.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do you offer bulk discounts?</button>
+            <div class="faq-answer">
+                <p>Yes, we provide discounts for large orders. Please contact us for more details and a custom quote.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container">
+        <h3>Contact Us</h3>
+        <form class="contact-form" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 BAPIL. All rights reserved.</p>
+    </footer>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Sitemap</h3>
+            <p>Services</p>
+            <p>About Us</p>
+            <p>Products</p>
+            <p>Sustainability</p>
+            <p>FAQ</p>
+            <p>Contact Us</p>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: sounak@bampl.in</p>
+            <p>Phone: +91 97484 05630</p>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 BAPIL. All Rights Reserved.</p>
+        </div>
+    </footer>
+      
+
+
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollTopBtn" title="Go to top">Top</button>
+
+    <!-- JavaScript for additional features -->
+    <script>
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // FAQ Toggle
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // Scroll-to-Top Button
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        };
+
+        scrollTopBtn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Contact Form Validation
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Form submitted successfully!');
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+
+</body>
+</html>
